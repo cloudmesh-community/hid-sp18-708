@@ -2,8 +2,8 @@ owner:
   firstname: "TBD"
   lastname: "TBD"
   hid: "hid-sp18-708"
-  community: "sp17-i524"
-  oldhid: "S17-IO-0000" 
-  old-git-url: "https://github.com/cloudmesh/sp17-i524.git"
+  community: "sp16-i524"
+  oldhid: "F16-DG-4076" 
+  old-git-url: "https://gitlab.com/cloudmesh_fall2016/F16-DG-4076/tree/master"
   
-# fill out the stuff above and remove this line when done
+# fill out the stuff above and remove this line when done community is the class you took
