@@ -119,9 +119,9 @@ choose from related to Python's main three packages for Twitter
 streaming: Twitter, Tweepy, and Twython.  After multiple variations
 were attempted to develop a code based on these three packages,
 Twython was selected due to its flexibility and compatibility with
-other packages like Pandas and CSV~\cite{twitterU46}~\cite{clay2013}
-~\cite{python37} ~\cite{python-csv}.  This package is the only one
-that provided solutions to the following critical issues:
+other packages like Pandas and
+CSV~\cite{twitterU46,clay2013,python37,python-csv}.  This package is
+the only one that provided solutions to the following critical issues:
 
 \begin{itemize}
 \item automatically breaking with the Twitter feed,
@@ -135,7 +135,7 @@ that provided solutions to the following critical issues:
 Initial processing and visualization of the tweets was executed with
 Python packages Re and NLTK.  NLTK's frequency distribution tool was
 used to create the line chart in
-Figure~\ref{fig:linechart}~\cite{bird2016}.  This chart provides an
+Figure~\ref{fig:linechart,bird2016}.  This chart provides an
 initial insight into potential themes and qualitative sentiment
 associated with the topic of immunotherapy.  Interestingly, there are
 no negative individual terms within the 40 most common words depicted
@@ -191,7 +191,7 @@ sub-modules from Sklearn were used cross-validation and accuracy
 scoring for three different machine learning algorithms: naive Bayes,
 support vector machine, and Sklearn's multi-layer perceptron (MLP)
 neural
-network~\cite{brownlee_2016}~\cite{ads_algorithms}~\cite{raschka2016}.
+network~\cite{brownlee_2016,ads_algorithms,raschka2016}.
 
 \begin{figure}[H]
 \centering
@@ -203,8 +203,8 @@ network~\cite{brownlee_2016}~\cite{ads_algorithms}~\cite{raschka2016}.
 \begin{figure}[H]
 \centering
 \includegraphics[width=\columnwidth]{images/ML_algorithms_performance.png}
-\caption{Performance of Naive Bayes, Support Vector Machine, and Multi-Perceptron 
-Neural Network}
+\caption{Performance of Naive Bayes, Support Vector Machine, and
+  Multi-Perceptron Neural Network}
 \label{fig:performance_scores}
 \end{figure} 
 
@@ -216,7 +216,7 @@ Naive Bayes and Support Vector Machine.  Sklearn's neural network
 algorithm resulted accuracy scores above 60 percent.  However, since
 the desired score was 80\% or more, additional research posited the
 Extreme Gradient Boosting (\emph{XGBoost}) algorithm as a likely
-better candidate~\cite{Chen2016} ~\cite{baba2016}~\cite{phunter2016}.
+better candidate~\cite{Chen2016,baba2016,phunter2016}.
 After testing this algorithm with the data and comparing the results
 with the other three algorithms discussed above, it provided
 significantly higher results with a top accuracy score of 76\%.
@@ -319,13 +319,16 @@ Python users.
 Before discussing the issues, several data scientists who are generous
 with sharing their work online along with open source Python
 publications were critical in the success of this report
-~\cite{sweigart2015} ~\cite{ojeda2014}.  Most significantly, Dr. Jason
+~\cite{sweigart2015,ojeda2014}.  Most significantly, Dr.\ Jason
 Brownlee, the author of the website \emph{Machine Learning Mastery};
-Brett Romero (\url{www.brettromero.com}; and Tianqi Chen, the author
-of the XGB script benefited this project from the micro level and on
-the macro level continue to contribute to the international data
-science
-community~\cite{brownlee_2016}~\cite{romero2016}~\cite{Chen2016}.
+Brett Romero (\url{www.brettromero.com}); 
+
+\TODO{NO URLS ALLOWED IN TEXT, MUST BE A CITATION}
+
+and Tianqi Chen, the author of the XGB script benefited this project
+from the micro level and on the macro level continue to contribute to
+the international data science
+community~\cite{brownlee_2016,romero2016,Chen2016}.
 
 \emph{Challenges}: Significant issues, both expected and
 unanticipated, appeared consistently throughout the course of
@@ -362,7 +365,7 @@ number of tweets have been saved.
   encoding.  When using Textblob and Pandas to process tweets for
   sentiment, Python processed the text as ascii-encoded, but Textblob
   requires UTF-8.  Using Jupyter Notebook further compounded the issue
-  because the simplest solution – using \emph{reload(sys)} and then
+  because the simplest solution – using \verb|reload(sys)| and then
   setting the default encoding to \emph{utf-8}—caused the results of
   the code to print in the terminal window and not the notebook
   itself.  There is no resolution for this small, albeit very
